@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://127.0.0.1/stock/Scan.php" method="GET">
+        <input type="text" name="barcode">
+        <input type="submit" value="submit">
+        <button onclick="sendData()">Send json post request</button>
+    </form>
+
+    <script>
+        function sendData()
+        {
+        var xhttp = new XMLHttpRequest(); 
+      
+
+        xhttp.open("GET", "Scan.php", true);
+        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        
+        
+        xhttp.send("barcode="+555018729813);  
+
+        }
+    </script>
+</body>
+</html>
