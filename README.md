@@ -8,6 +8,6 @@ how the application Work :
 <br/>
 3- take photo or scan barcode to increase or decrease the quantity of your product
 <br/>
-4- the application will send photo with text to php APT photo will be uploaded to server and text in mysql DB
+4- the application will send photo with text to php API photo will be uploaded to server and text in mysql DB
 <br/>
 Note Storage and Camera permission needed !
